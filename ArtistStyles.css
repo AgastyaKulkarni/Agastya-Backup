@@ -1,0 +1,218 @@
+:root{
+  --main-image: url(artists/default.png);
+}
+
+.image-container{
+  position: relative;
+  width: 100%;
+  height: 710px;
+}
+.image {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  flex: 0 0 35%; /* takes 35% width */
+  display: block;
+  background-image: var(--main-image);
+  background-size: cover; 
+  width: 100%;
+  height: 710px;
+  background-position: center;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;   /* only left half */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.95) 20%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.text {
+  flex: 0 0 65%;
+  position: absolute;
+  top: -200px;
+  left: 15px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;       
+  height: 710px;               
+  padding-left: 0%;   
+  padding-top: 0% ;
+  font-family: "Impact", sans-serif;
+  letter-spacing: 0.01px;
+  color: #e1d5c1;
+  font-size:120px;
+  font-weight: 1000;
+  text-align: top-left;
+  text-shadow: 0 0 8px #000000;
+  opacity: 1;
+  z-index: 10;
+  line-height: 1;
+  margin: 0;
+}
+.text a{
+  color: #e1d5c1;
+  text-decoration: none;
+}
+.text a:hover{
+  transform: scale(1.05);
+  color: #d8c4b1;
+  text-shadow: 0 0 5px #e1d5c1;
+  transition: 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: underline 5.5px;
+}
+.text a:active{
+  transform: scale(0.95);
+  transition: 0.2s ease;
+}
+
+body{
+  background-color: black;
+}
+
+.info {
+  font-family: "Bebas Neue", serif;
+  margin-top: 65px;
+  position: absolute;
+  top: 225px;
+  left: 17px;
+  text-align: left;
+  color: #bababa;
+  z-index: 10;
+  font-size: 27.5px;
+  max-width: 100%;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.buttons{
+  z-index: 2;
+  position: absolute;
+  top: 320px;
+  left: 460px;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+#random-btn {
+  font-size: 14px;
+  padding: 12px 24px;
+}
+button{
+  background-color: #383838;
+  color: #e1d5c1;
+  border: none;
+  border-radius: 140px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover{
+  background-color: #444;
+  transform: scale(1.1);
+}
+button:active{
+  transform: scale(0.9);
+}
+
+.divider{
+  position: absolute;
+  top: 335px;
+  left: 15px;
+  z-index: 10;
+  color: #e1d5c1;
+  font-style: italic;
+  font-size: 19px;
+}
+
+.albums{
+  position: absolute;
+  top: 440px;
+  left: 35px;
+  z-index: 10;
+  display: flex;
+  gap: 100px;
+}
+.albums img{
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.albums img:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.albums img:active{
+  transform: scale(0.95);
+  transition: 0.2s ease;
+}
+
+.names {
+  display: flex;
+  z-index: 10;
+  color: #e1d5c1;
+  font-size: 22px;
+  font-family: "Cinzel Decorative", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.names .hours{
+  position: absolute;
+  top: 665px;
+  left: 75px;
+}
+.names .hut{
+  position: absolute;
+  top: 665px;
+  left: 348px;
+}
+.names .ten{
+  position: absolute;
+  top: 665px;
+  left: 95px;
+}
+.names .three{
+  position: absolute;
+  top: 665px;
+  left: 390px;
+}
+.names .morale{
+  position: absolute;
+  top: 665px;
+  left: 80px;
+}
+.names .butterfly{
+  position: absolute;
+  top: 665px;
+  left: 353px;
+}
+.names a{
+  color: #e1d5c1;
+  text-decoration: none;
+}
+.names a:hover{
+  transform: scale(1.1);
+  color: #ffffff;
+  text-shadow: 0 0 5px #e1d5c1;
+  transition: 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+.names a:active{
+  transform: (0.9);
+  transition: 0.2s ease;
+}
+
+.years{
+  display: flex;
+  position: absolute;
+  top: 675px;
+  left: 130px;
+  z-index: 10;
+  color: #e1d5c1;
+  font-size: 17px;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  gap: 280px;
+}
