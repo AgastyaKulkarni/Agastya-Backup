@@ -12,6 +12,11 @@ function play(name){
     const video = name[randomIndex];
     window.open("https://www.youtube.com/watch?v="+video, "_blank");
   });
+  btn.addEventListener("touchstart", () => {
+    const randomIndex = Math.floor(Math.random() * (name.length));
+    const video = name[randomIndex];
+    window.open("https://www.youtube.com/watch?v="+video, "_blank");
+  });
 }
 
 const artists = {
