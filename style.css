@@ -99,6 +99,7 @@ img {
   width: 100%;
   height: auto;
   gap: 0;
+  margin-bottom: 8%;
 }
 .mycontainer div {
   flex: 1;
@@ -118,6 +119,7 @@ img {
 }
 
 p{
+  margin-top: 3%;
   color: #e1d5c1;
   text-align: center;
   font-size: 30px;
