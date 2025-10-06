@@ -23,7 +23,6 @@ body {
   gap: 0px;
   animation: scroll 40s linear infinite;
 }
-
 .track img {
   display: block;
   transition: transform 0.5s ease;
@@ -58,28 +57,10 @@ h1 {
   opacity: 1;
   z-index: 10;
 }
-h2{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 3%;
-  font-family: "Monsterrat", sans-serif;
-  letter-spacing: 0.01px;
-  color: #e1d5c1;
-  font-size:22.5px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 0 0 8px #000000;
-  pointer-events: none;
-  opacity: 1;
-  z-index: 10;
-}
 
 @keyframes scroll {
   0%{
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100%{
     transform: translateX(-5400px);
@@ -93,78 +74,47 @@ img {
   height: 300;
 }
 
+.header{
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-family: "Monsterrat", sans-serif;
+  letter-spacing: 0.01px;
+  color: #e1d5c1;
+  font-size:22.5px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0 0 8px #000000;
+  pointer-events: none;
+  opacity: 1;
+  z-index: 10;
+}
+
 .mycontainer{
   display: flex;
   width: 100%;
   height: auto;
+  gap: 0;
 }
 .mycontainer div {
   flex: 1;
   display: flex;
-  margin-top: 5%;
+  margin-top: 3%;
   justify-content: center;
   align-items: center;
   color: #e1d5c1;
   font-size: 2rem;
   font-family: "Impact", sans-serif;
   font-weight: 100;
+  border-right: 3px solid white;
 }
 
-.p1{
-  margin: 0;
-  position: absolute;
-  top: 500px;
-  left: 325px;
-  opacity: 0.75;
-}
-.p2{
-  margin: 0;
-  position: absolute;
-  top: 528px;
-  left: 325px;
-  opacity: 0.75;
-}
-.p3{
-  margin: 0;
-  position: absolute;
-  top: 500px;
-  left: 590px;
-  opacity: 0.75;
-}
-.p4{
-  margin: 0;
-  position: absolute;
-  top: 528px;
-  left: 590px;
-  opacity: 0.75;
-}
-.p5{
-  margin: 0;
-  position: absolute;
-  top: 500px;
-  left: 940px;
-  opacity: 0.75;
-}
-.p6{
-  margin: 0;
-  position: absolute;
-  top: 528px;
-  left: 940px;
-  opacity: 0.75;
-}
-.p7{
-  margin: 0;
-  position: absolute;
-  top: 500px;
-  left: 1180px;
-  opacity: 0.75;
-}
-.p8{
-  margin: 0;
-  position: absolute;
-  top: 528px;
-  left: 1180px;
-  opacity: 0.75;
+.mycontainer div:last-child {
+  border-right: none;
 }
 
 p{
